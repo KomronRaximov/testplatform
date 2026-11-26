@@ -1,0 +1,10 @@
+{
+  "name": "testplatform",
+  "version": "1.0.0",
+  "description": "Elektron test platformasi: SI yordamida ishchi o'quv dasturlarini ishlab chiqish (24 topshiriq)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED",
+  "private": true
+}

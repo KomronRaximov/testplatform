@@ -1,0 +1,17 @@
+[Unit]
+Description=Elektron test serveri (SI va ishchi o'quv dasturi)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/elektron-test
+Environment=PORT=3000
+Environment=HOST=127.0.0.1
+Environment=ADMIN_PIN=BU_YERGA_KUCHLI_PAROL
+ExecStart=/usr/bin/node /home/ubuntu/elektron-test/server.js
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
